@@ -2,12 +2,15 @@ import os
 import shutil
 import random
 
-# Source र Destination paths (तपाईँकै फोल्डर स्ट्रक्चर अनुसार)
+# Source र Destination paths
 base_dir = 'ml_waste_system'
-classes = ['low_waste', 'medium_waste', 'high_waste']
+valid_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.webp'}
+
+# 'invalid_or_clean' पनि थपिएको ४ वटा क्याटगोरीहरू
+classes = ['high_waste', 'invalid_or_clean', 'low_waste', 'medium_waste']
 split_ratio = 0.8  # 80% Train, 20% Val
 
-print("🔄 `ml_waste_system/train` बाट फोटोहरू ८०/२० मा मिलाउने काम सुरु भयो...\n")
+print("🔄 `ml_waste_system/train` बाट 80/20 अनुपातमा डाटा विभाजन हुँदैछ...\n")
 
 for cls in classes:
     train_cls_dir = os.path.join(base_dir, 'train', cls)
@@ -17,14 +20,17 @@ for cls in classes:
     os.makedirs(val_cls_dir, exist_ok=True)
 
     if not os.path.exists(train_cls_dir):
-        print(f"⚠️ Warning: {train_cls_dir} भेटिएन!")
+        print(f"⚠️ Warning: {train_cls_dir} फोल्डर भेटिएन!")
         continue
 
     # Train फोल्डर भित्र भएका सबै फोटोहरूको लिस्ट लिने
-    images = [f for f in os.listdir(train_cls_dir) if os.path.isfile(os.path.join(train_cls_dir, f))]
+    images = [
+        f for f in os.listdir(train_cls_dir)
+        if os.path.isfile(os.path.join(train_cls_dir, f)) and os.path.splitext(f)[1].lower() in valid_extensions
+    ]
 
     if len(images) == 0:
-        print(f"⚠️ {cls} भित्र कुनै पनि फोटो भेटिएन!")
+        print(f"⚠️ {cls} भित्र कुनै फोटोहरू छैनन्!")
         continue
 
     # फोटोहरू र्‍यान्डम्ली घालमेल गर्ने
@@ -41,6 +47,6 @@ for cls in classes:
         shutil.move(src_path, dst_path)
 
     remaining_train_count = len(images) - len(val_images)
-    print(f"✅ {cls}: जम्मा {len(images)} फोटो मध्ये -> Train मा: {remaining_train_count} वटा र Val मा: {len(val_images)} वटा सेट भयो।")
+    print(f"✅ {cls}: कुल {len(images)} -> Train: {remaining_train_count} | Val: {len(val_images)}")
 
-print("\n🎉 Work Finished! `ml_waste_system` photos are now split into Train and Val folders successfully.")
+print("\n🎉 काम सकियो! `ml_waste_system` का फोटोहरू सफलतापूर्वक Train र Val फोल्डरमा विभाजन भए।")

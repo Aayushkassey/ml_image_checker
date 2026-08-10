@@ -1,0 +1,290 @@
+PS C:\Users\surum\Desktop\SATRI INTERN\wastage training> py .\train_gatekeeper.py
+Recognized Classes: ['high_waste', 'invalid_or_clean', 'low_waste', 'medium_waste']
+Training Device: cpu
+
+--- Balanced Dataset Training Started ---
+
+Epoch 1/25
+-------------------------
+Train Loss: 1.1571 Acc: 0.4824
+Val Loss: 0.9667 Acc: 0.5802
+🌟 New Best Model Saved! Acc: 0.5802
+
+Epoch 2/25
+-------------------------
+Train Loss: 0.8038 Acc: 0.6833
+Val Loss: 0.7257 Acc: 0.6997
+🌟 New Best Model Saved! Acc: 0.6997
+
+Epoch 3/25
+-------------------------
+Train Loss: 0.6789 Acc: 0.7382
+Val Loss: 0.6536 Acc: 0.7338
+🌟 New Best Model Saved! Acc: 0.7338
+
+Epoch 4/25
+-------------------------
+Train Loss: 0.5894 Acc: 0.7657
+Val Loss: 0.6259 Acc: 0.7270
+
+Epoch 5/25
+-------------------------
+Train Loss: 0.4765 Acc: 0.8103
+Val Loss: 0.5998 Acc: 0.7645
+🌟 New Best Model Saved! Acc: 0.7645
+
+Epoch 6/25
+-------------------------
+Train Loss: 0.4274 Acc: 0.8403
+Val Loss: 0.5713 Acc: 0.7679
+🌟 New Best Model Saved! Acc: 0.7679
+
+Epoch 7/25
+-------------------------
+Train Loss: 0.4225 Acc: 0.8309
+Val Loss: 0.5799 Acc: 0.7747
+🌟 New Best Model Saved! Acc: 0.7747
+
+Epoch 8/25
+-------------------------
+Train Loss: 0.3656 Acc: 0.8549
+Val Loss: 0.5730 Acc: 0.7782
+🌟 New Best Model Saved! Acc: 0.7782
+
+Epoch 9/25
+-------------------------
+Train Loss: 0.3137 Acc: 0.8807
+Val Loss: 0.6036 Acc: 0.7850
+🌟 New Best Model Saved! Acc: 0.7850
+
+Epoch 10/25
+-------------------------
+Train Loss: 0.2813 Acc: 0.9039
+Val Loss: 0.5235 Acc: 0.7816
+
+Epoch 11/25
+-------------------------
+Train Loss: 0.2298 Acc: 0.9176
+Val Loss: 0.5328 Acc: 0.7884
+🌟 New Best Model Saved! Acc: 0.7884
+
+Epoch 12/25
+-------------------------
+Train Loss: 0.2437 Acc: 0.9124
+Val Loss: 0.5249 Acc: 0.7884
+
+Epoch 13/25
+-------------------------
+Train Loss: 0.2078 Acc: 0.9253
+Val Loss: 0.5230 Acc: 0.7782
+
+Epoch 14/25
+-------------------------
+Train Loss: 0.1922 Acc: 0.9330
+Val Loss: 0.5318 Acc: 0.7747
+
+Epoch 15/25
+-------------------------
+Train Loss: 0.1915 Acc: 0.9339
+Val Loss: 0.5873 Acc: 0.7713
+
+Epoch 16/25
+-------------------------
+Train Loss: 0.1812 Acc: 0.9305
+Val Loss: 0.5723 Acc: 0.7884
+
+Epoch 17/25
+-------------------------
+Train Loss: 0.1603 Acc: 0.9416
+Val Loss: 0.5907 Acc: 0.7782
+
+Epoch 18/25
+-------------------------
+Train Loss: 0.1748 Acc: 0.9485
+Val Loss: 0.5934 Acc: 0.8055
+🌟 New Best Model Saved! Acc: 0.8055
+
+Epoch 19/25
+-------------------------
+Train Loss: 0.1553 Acc: 0.9442
+Val Loss: 0.5695 Acc: 0.8055
+
+Epoch 20/25
+-------------------------
+Train Loss: 0.1290 Acc: 0.9502
+Val Loss: 0.5717 Acc: 0.8020
+
+Epoch 21/25
+-------------------------
+Train Loss: 0.1470 Acc: 0.9468
+Val Loss: 0.5791 Acc: 0.7986
+
+Epoch 22/25
+-------------------------
+Train Loss: 0.1444 Acc: 0.9425
+Val Loss: 0.5825 Acc: 0.7986
+
+Epoch 23/25
+-------------------------
+Train Loss: 0.1545 Acc: 0.9391
+Val Loss: 0.5706 Acc: 0.7952
+
+Epoch 24/25
+-------------------------
+Train Loss: 0.1441 Acc: 0.9519
+Val Loss: 0.5638 Acc: 0.7986
+
+Epoch 25/25
+-------------------------
+Train Loss: 0.1497 Acc: 0.9468
+Val Loss: 0.5685 Acc: 0.7918
+
+🎯 Highest Validation Accuracy Achieved: 80.55%
+✅ Best Model saved successfully as gatekeeper_model.pth
+
+
+
+PS C:\Users\surum\Desktop\SATRI INTERN\wastage training> py .\train_gatekeeper.py
+Recognized Classes: ['high_waste', 'invalid_or_clean', 'low_waste', 'medium_waste']
+Training Device: cpu
+
+--- Balanced Dataset Training Started ---
+
+Epoch 1/25
+-------------------------
+Train Loss: 1.1502 Acc: 0.5095
+Val Loss: 0.9491 Acc: 0.5884
+🌟 New Best Model Saved! Acc: 0.5884
+
+Epoch 2/25
+-------------------------
+Train Loss: 0.8023 Acc: 0.6770
+Val Loss: 0.7055 Acc: 0.7143
+🌟 New Best Model Saved! Acc: 0.7143
+
+Epoch 3/25
+-------------------------
+Train Loss: 0.6452 Acc: 0.7543
+Val Loss: 0.6237 Acc: 0.7109
+
+Epoch 4/25
+-------------------------
+Train Loss: 0.5359 Acc: 0.7998
+Val Loss: 0.6087 Acc: 0.7109
+
+Epoch 5/25
+-------------------------
+Train Loss: 0.4770 Acc: 0.8204
+Val Loss: 0.6079 Acc: 0.7177
+🌟 New Best Model Saved! Acc: 0.7177
+
+Epoch 6/25
+-------------------------
+Train Loss: 0.4471 Acc: 0.8179
+Val Loss: 0.5637 Acc: 0.7585
+🌟 New Best Model Saved! Acc: 0.7585
+
+Epoch 7/25
+-------------------------
+Train Loss: 0.3940 Acc: 0.8497
+Val Loss: 0.5619 Acc: 0.7517
+
+Epoch 8/25
+-------------------------
+Train Loss: 0.3554 Acc: 0.8677
+Val Loss: 0.5641 Acc: 0.7619
+🌟 New Best Model Saved! Acc: 0.7619
+
+Epoch 9/25
+-------------------------
+Train Loss: 0.3029 Acc: 0.8857
+Val Loss: 0.5318 Acc: 0.7789
+🌟 New Best Model Saved! Acc: 0.7789
+
+Epoch 10/25
+-------------------------
+Train Loss: 0.3021 Acc: 0.8935
+Val Loss: 0.5681 Acc: 0.7585
+
+Epoch 11/25
+-------------------------
+Train Loss: 0.2679 Acc: 0.8960
+Val Loss: 0.5379 Acc: 0.7823
+🌟 New Best Model Saved! Acc: 0.7823
+
+Epoch 12/25
+-------------------------
+Train Loss: 0.2368 Acc: 0.9167
+Val Loss: 0.5856 Acc: 0.7721
+
+Epoch 13/25
+-------------------------
+Train Loss: 0.2084 Acc: 0.9218
+Val Loss: 0.5628 Acc: 0.7959
+🌟 New Best Model Saved! Acc: 0.7959
+
+Epoch 14/25
+-------------------------
+Train Loss: 0.2259 Acc: 0.9167
+Val Loss: 0.5904 Acc: 0.7891
+
+Epoch 15/25
+-------------------------
+Train Loss: 0.1640 Acc: 0.9416
+Val Loss: 0.5867 Acc: 0.7925
+
+Epoch 16/25
+-------------------------
+Train Loss: 0.1488 Acc: 0.9536
+Val Loss: 0.5799 Acc: 0.7925
+
+Epoch 17/25
+-------------------------
+Train Loss: 0.1787 Acc: 0.9407
+Val Loss: 0.5913 Acc: 0.7925
+
+Epoch 18/25
+-------------------------
+Train Loss: 0.1411 Acc: 0.9527
+Val Loss: 0.5866 Acc: 0.8095
+🌟 New Best Model Saved! Acc: 0.8095
+
+Epoch 19/25
+-------------------------
+Train Loss: 0.1545 Acc: 0.9433
+Val Loss: 0.5770 Acc: 0.8027
+
+Epoch 20/25
+-------------------------
+Train Loss: 0.1341 Acc: 0.9562
+Val Loss: 0.5770 Acc: 0.8129
+🌟 New Best Model Saved! Acc: 0.8129
+
+Epoch 21/25
+-------------------------
+Train Loss: 0.1425 Acc: 0.9570
+Val Loss: 0.5776 Acc: 0.7993
+
+Epoch 22/25
+-------------------------
+Train Loss: 0.1410 Acc: 0.9433
+Val Loss: 0.5819 Acc: 0.7959
+
+Epoch 23/25
+-------------------------
+Train Loss: 0.1376 Acc: 0.9527
+Val Loss: 0.5791 Acc: 0.8061
+
+Epoch 24/25
+-------------------------
+Train Loss: 0.1256 Acc: 0.9562
+Val Loss: 0.5886 Acc: 0.7993
+
+Epoch 25/25
+-------------------------
+Train Loss: 0.1204 Acc: 0.9570
+Val Loss: 0.5910 Acc: 0.8027
+
+🎯 Highest Validation Accuracy Achieved: 81.29%
+✅ Best Model saved successfully as gatekeeper_model.pth
+PS C:\Users\surum\Desktop\SATRI INTERN\wastage training> 
